@@ -9,10 +9,10 @@ class TestCase1(SimpleTestCase):
 
     def test_sum(self):
         """ Test adding two numbers"""
-
+        realResult = 10
         res = calc.add(4, 6)
 
-        self.assertEqual(res, 10)
+        self.assertEqual(res, realResult)
 
     def test_subtract(self):
         """Test subtracting y from x"""
