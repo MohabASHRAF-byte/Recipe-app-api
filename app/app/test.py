@@ -13,3 +13,10 @@ class TestCase1(SimpleTestCase):
         res = calc.add(4, 6)
 
         self.assertEqual(res, 10)
+
+    def test_subtract(self):
+        """Test subtracting y from x"""
+
+        res = calc.subtract(5, 4)
+
+        self.assertEqual(res, 1)
