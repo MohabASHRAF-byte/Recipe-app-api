@@ -14,7 +14,10 @@ class UserAdmin(BaseUserAdmin):
     fieldsets = (
         (None,
          {'fields':
-              ('email', 'password')
+          (
+              'email',
+              'password'
+          )
           }
          ),
         (
@@ -29,24 +32,24 @@ class UserAdmin(BaseUserAdmin):
         ),
         ('Important dates',
          {'fields':
-              ('last_login',)
+          ('last_login',)
           }
          ),
     )
     readonly_fields = ['last_login']
     add_fieldsets = (
-        (None,{
-             'fields':
-                 (
-                     'email',
-                     'password1',
-                     'password2',
-                     'name',
-                     'is_active',
-                     'is_staff',
-                     'is_superuser',
-                 )
-         }
+        (None, {
+            'fields':
+                (
+                    'email',
+                    'password1',
+                    'password2',
+                    'name',
+                    'is_active',
+                    'is_staff',
+                    'is_superuser',
+                )
+        }
          ),
     )
 
