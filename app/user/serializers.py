@@ -15,4 +15,4 @@ class UserSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         """OverWrite the default behavior."""
-        get_user_model().objects.create_user(**validated_data)
+        return get_user_model().objects.create_user(**validated_data)
